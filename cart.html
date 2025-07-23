@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul id="nav" class="nav">
+          <img src="asserts/logo.png" alt="" class="logo" />
+          <li class="hide"><a href="index.html" class="a">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <h1>Your Cart</h1>
+        <table id="cart-table">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Price (₹)</th>
+              <th>Quantity</th>
+              <th>Total (₹)</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3" style="text-align: right">
+                <strong>Grand Total:</strong>
+              </td>
+              <td id="grand-total" colspan="2">₹0</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </main>
+    <script src="cart.js"></script>
+  </body>
+</html>

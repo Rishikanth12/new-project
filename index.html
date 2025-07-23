@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rishi Biriyani</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul id="nav" class="nav">
+          <img src="asserts/logo.png" alt="" class="logo" />
+          <li class="hide"><a href="#home" class="a">Home</a></li>
+          <li class="hide"><a href="#about" class="a">About</a></li>
+          <li class="hide"><a href="#menu" class="a">Menu</a></li>
+          <li class="hide"><a href="cart.html" class="a">Cart</a></li>
+          <li class="hide"><a href="#reviews" class="a">Reviews</a></li>
+          <li class="hide"><a href="#contact" class="a">Contact</a></li>
+          <li class="hide-me" onclick="showSidebar()">
+            <img src="asserts/menu.png" alt="" />
+          </li>
+        </ul>
+        <ul class="nav" id="sidebar">
+          <li onclick="HideSidebar()">
+            <img src="asserts/close.png" alt="" />
+          </li>
+          <li><a href="#home" class="a">Home</a></li>
+          <li><a href="#about" class="a">About</a></li>
+          <li><a href="#menu" class="a">Menu</a></li>
+          <li><a href="cart.html" class="a">Cart</a></li>
+          <li><a href="#reviews" class="a">Reviews</a></li>
+          <li><a href="#contact" class="a">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div class="home" id="home">
+        <div class="home-content">
+          <h3>
+            Welcome to Rishi Biryani – <br />Where Every Bite Tells a Story!
+          </h3>
+          <p>
+            Welcome to Rishi Biryani – where every grain of rice tells a tale of
+            tradition, every spice sings a note of flavor, and every bite feels
+            like home. Crafted with love, simmered in authentic spices, and
+            served with pride — our biryani isn’t just food, it’s an emotion.
+          </p>
+          <button class="button">
+            <a href="#menu" id="button">Order Now</a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="about" id="about">
+        <div class="about-content">
+          <h1 class="heading"><span>About </span>Us</h1>
+          <h3>What makes our biryani so special?</h3>
+          <p>
+            Biryani is a fragrant and flavorful rice dish that beautifully
+            blends spices, tender meat, and aromatic basmati rice. Known for its
+            rich taste and irresistible aroma, biryani is a celebration of
+            culinary tradition and love for food. Whether it’s chicken, mutton,
+            or vegetable biryani, each grain of rice is infused with spices like
+            saffron, cardamom, and cloves, creating a mouth-watering experience
+            in every bite. Perfect for special occasions or family gatherings,
+            biryani is more than just a dish—it’s a timeless delight that brings
+            people together.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="menu" id="menu">
+        <h1>Our Menu</h1>
+        <div class="items">
+          <img src="asserts/chicken.png" alt="" />
+          <h2>Chiken Biriyani</h2>
+          <h4>Rs. 180/-</h4>
+          <button class="order" onclick="addtocart()" item-name="Chicken Biriyani" item-price="180">
+            +<span class="hover-text">Add to cart</span>
+          </button>
+        </div>
+        <div class="items">
+          <img src="asserts/fried-removebg-preview.png" alt="" />
+          <h2>chicken Fried Rice</h2>
+          <h4>Rs. 150/-</h4>
+          <button class="order" onclick="addtocart()" item-name="Chicken Fried Rice" item-price="150">
+            +<span class="hover-text">Add to cart</span>
+          </button>
+        </div>
+        <div class="items">
+          <img src="asserts/gee.jpg" alt="" class="gee"/>
+          <h2 class="gee-rice">Ghee RIce & Mutton Gravy</h2>
+          <h4>Rs. 250/-</h4>
+          <button class="order" onclick="addtocart()" item-name="Ghee RIce & Mutton Gravy" item-price="250">
+            +<span class="hover-text">Add to cart</span>
+          </button>
+        </div>
+        <div class="items">
+          <img src="asserts/grill.jpeg" alt="" class="gee"/>
+          <h2 class="gee-rice">Grill chicken</h2>
+          <h4>Rs. 350/-</h4>
+          <button class="order" onclick="addtocart()" item-name="Grill chicken" item-price="350">
+            +
+            <span class="hover-text">Add to cart</span>
+          </button>
+        </div>
+        <div class="cart">
+          <a href="cart.html"
+            >🛒 Cart Items: <span class="cartcount">0</span></a
+          >
+        </div>
+      </div>
+    </section>
+    <section id="reviews" class="reviews">
+      <h1 id="heading">Reviews</h1>
+      <div class="cus1" id="cus1">
+        <div class="rotate-front">
+          <h1>Customer Reviews</h1>
+          <span class="click">(Click to view)</span>
+        </div>
+        <div class="rotate-back">
+          <h1>1. Siva R.</h1>
+          <h4>Rating: ★★★★★</h4>
+          <p>
+            "I had an amazing experience! The biriyani was flavorful, with just
+            the right amount of spice. The chicken was cooked perfectly, and the
+            portions were generous. Will definitely come back!"
+          </p>
+        </div>
+      </div>
+      <div class="cus1" id="cus1">
+        <div class="rotate-front">
+          <h1>Customer Reviews</h1>
+          <span class="click">(Click to view)</span>
+        </div>
+        <div class="rotate-back">
+          <h1>2. Banu S.</h1>
+          <h4>Rating: ★★★★☆</h4>
+          <p>
+            "The biriyani tasted authentic and aromatic. The rice was
+            long-grained and perfectly cooked. Customer service was quick and
+            friendly. Would have loved more raita, though!"
+          </p>
+        </div>
+      </div>
+      <div class="cus1" id="cus1">
+        <div class="rotate-front">
+          <h1>Customer Reviews</h1>
+          <span class="click">(Click to view)</span>
+        </div>
+        <div class="rotate-back">
+          <h1>3. Kavya M.</h1>
+          <h4>Rating: ★★★★☆</h4>
+          <p>
+            "Great ambiance and absolutely loved the egg biriyani. The flavors
+            reminded me of home-made biriyani. Wish the waiting time was a bit
+            less during rush hour."
+          </p>
+        </div>
+      </div>
+      <div class="cus1" id="cus1">
+        <div class="rotate-front">
+          <h1>Customer Reviews</h1>
+          <span class="click">(Click to view)</span>
+        </div>
+        <div class="rotate-back">
+          <h1>4. Sneha R.</h1>
+          <h4>Rating: ★★★★★</h4>
+          <p>
+            "Hands down the best biriyani I’ve had in the city! The spices are
+            well-balanced, and the meat is always tender. Price is reasonable
+            for the quality. Highly recommended."
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer id="contact" class="contact">
+      <h1 id="heading-contact">Contact</h1>
+      <div>
+        <iframe
+          src="https://www.google.com/maps?q=9878+Sunset+Boulevard,+Los+Angeles,+CA+90028&output=embed"
+          width="200"
+          height="150"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+         class="map"></iframe>
+        <div class="shop">
+          <h5 class="shop-name">Rishi Biriyani</h5>
+          <p class="shop-add">9878 Sunset Boulevard, Los Angeles, CA 90028</p>
+          <p class="shop-add">
+            <i class="fa-duotone fa-solid fa-phone"></i
+            ><a href="tel:123-456-7890" class="phone">&nbsp; 123-456-7890</a>
+          </p>
+          <p class="shop-add">
+            <i class="fa-duotone fa-solid fa-envelope"></i
+            ><a href="mailto:8m0oK@example.com" class="phone"
+              >&nbsp;8m0oK@example.com</a
+            >
+          </p>
+          <p class="shop-add">
+            for order <a href="#menu" class="phone"><b style="color: #27ae60;">&nbsp; click here</b></a>
+          </p>
+      </div>
+      </div>
+          <div class="social"><div>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><i class="fa-brands fa-facebook"
+                >&nbsp; <span class="fb">Rishibiriyani</span>
+              </i></a
+            >
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="fa-brands fa-instagram"
+                >&nbsp; <span class="fb">Rishi_biriyani</span></i
+              ></a
+            >
+            <a href="https://twitter.com/" target="_blank"
+              ><i class="fa-brands fa-twitter"
+                >&nbsp; <span class="fb">Rishibiriyani</span></i
+              ></a
+            >
+            <a href="https://www.youtube.com/" target="_blank"
+              ><i class="fa-brands fa-youtube"
+                >&nbsp; <span class="fb">Rishibiriyani</span></i
+              ></a
+            ></div>
+            <div><h1 class="copy">© 2025 Rishi Biriyani</h1></div>
+          </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
